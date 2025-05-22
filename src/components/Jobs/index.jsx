@@ -80,7 +80,7 @@ const Jobs = () => {
         <div className="job-section">
           <div className="job-page">
             {filteredJobs.map(
-              ({ id, logo, company, position, location, posted, role }) => {
+              ({ id, logo, company, position, location, posted, role, experience }) => {
                 return (
                   <div className="job-list">
                     <div className="job-card">
@@ -100,6 +100,9 @@ const Jobs = () => {
                           <div className="category">
                             <p>{location}</p>
                             <p>{role}</p>
+                          </div>
+                          <div className="experience">
+                            <p>Years of experience required: <div>{experience}</div></p>
                           </div>
                         </div>
                       </div>
